@@ -1,0 +1,679 @@
+[{
+    "id": "eidolon_layer_order_base",
+    "name": "LAYER ORDER",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Only one layer of the Eidolon's layers is active at a time and only the active layer is a valid target that can take damage.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_metamorphosis_base",
+    "name": "METAMORPHOSIS",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "When the active layer reaches 0 HP, that layer is destroyed, evaporating from the field. The Eidolon and its shards clear all statuses and conditions, and all other effects targeting them immediately end (including Grapple, etc). The Eidolon remains, occupying the same space and providing obstruction as a blurring, shifting image, but it and all its shards gain Immunity to all damage and effects until the start of its next turn. At the start of that turn, a new layer manifests and any effects specific to that layer begin (including the creation of new shards, etc).",
+    "tags": []
+  },
+  {
+    "id": "eidolon_predictable_base",
+    "name": "PREDICTABLE",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon can take any actions available to an NPC (Quick Tech, Hide, etc.) but always performs any special actions available to its current layer first, if possible. Each layer profile presents a suggested order, but these are not mandatory. Unless stated otherwise, shards can only take a standard move.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_memetic_weapons_base",
+    "name": "MEMETIC WEAPONS",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Eidolons have a new type of weapon: Memetic weapons. These ranged weapons ignore engagement and do not affect allied characters, even if they are caught in their area of effect.",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      }
+    ]
+  },
+ 
+  {
+    "id": "eidolon_bonus_activations_base",
+    "name": "BONUS ACTIVATIONS",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Each round, the Eidolon takes one turn for every two mech characters hostile to it in the combat, to a maximum of four turns. It regains spent reactions at the start of each of its turns, though 1/round effects only refresh on its first turn each round.",
+    "tags": []
+  },
+
+  {
+    "id": "eidolon_ominous_hovering_base",
+    "name": "OMINOUS HOVERING",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon and its shards can fly equal to their Speed and hover, but never willingly move more than 1 space above the ground or any other surface. They never fall; if forced to land, they will always descent safely to the ground.",
+    "tags": []
+  },
+ 
+  {
+    "id": "eidolon_incomprehensible_base",
+    "name": "INCOMPREHENSIBLE",
+    "origin": {
+      "type": "Class",
+      "name": "Eidolon",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Scan (and other abilities that reveal an NPCs statistics) provide no information about the Eidolon or its shards. Instead, characters that Scan the Eidolon or try to reveal its statistics receive hints about the active layer's capabilities (listed in the layer profile under \"Hints\").",
+    "tags": []
+  },
+  {
+    "id": "eidolon_pulsing_core_core",
+    "name": "PULSING CORE",
+    "origin": {
+      "type": "Template",
+      "name": "CORE LAYER",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "This layer is Size 1/2 and has 1HP.",
+    "tags": [],
+    "override": {
+      "hp": "1",
+      "size": "0.5"
+    }
+  },
+ 
+  {
+    "id": "eidolon_anticausal_thought_core",
+    "name": "ANTICAUSAL THOUGHT",
+    "origin": {
+      "type": "Template",
+      "name": "CORE LAYER",
+      "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_line",
+        "val": "10"
+      }
+    ],
+    "weapon_type": "Superheavy Memetic",
+    "attack_bonus": [
+      2,
+      4,
+      6
+    ],
+    "accuracy": [
+      2,
+      2,
+      2
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "damage": [
+          15,
+          20,
+          25
+        ]
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "on_hit": ""
+  },
+  {
+    "id": "eidolon_layer_changes_adamant",
+    "name": "ADAMANT",
+    "origin": {
+      "type": "Template",
+      "name": "ADAMANT",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<p>While this layer is active, the Eidolon has {10/15/20} Armor. Each time it takes damage, it loses 2 Armor.</p><p>When the Eidolon's Armor is reduced by any means, including its own attacks, it releases a Blast 2 explosion of debris around itself, dealing 2 kinetic damage to all objects and chracters within the affected area.</p>",
+    "tags": [],
+    "override": {
+      "armor": [
+        "10",
+        "15",
+        "20"
+      ]
+    }
+  },
+ 
+  {
+    "id": "eidolon_exhort_adamant",
+    "name": "EXHORT",
+    "origin": {
+      "type": "Template",
+      "name": "ADAMANT",
+      "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This Weapon can attack two targets at a time. <li>On Attack: the Eidolon loses 1 Armor.</li>",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "weapon_type": "Heavy Memetic",
+    "attack_bonus": [
+      2,
+      2,
+      2
+    ],
+    "accuracy": [
+      1,
+      1,
+      1
+    ],
+    "damage": [
+      {
+        "type": "Physical",
+        "damage": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "on_hit": "The target becomes Shredded. This condition lasts until the layer is destroyed, and cannot be removed in any other way. Characters that are already Shredded take double damage."
+  },
+  {
+    "id": "eidolon_metalic_shriek_adamant",
+    "name": "METALIC SHRIEK",
+    "origin": {
+       "type": "Template",
+      "name": "ADAMANT",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon produces a new shard in a free space within Range 5.",
+    "tags": [{
+        "id": "tg_quick_action"
+      }]
+  },
+  {
+    "id": "eidolon_hint_adamant",
+    "name": "HINT (ADAMANT)",
+    "origin": {
+       "type": "Template",
+      "name": "ADAMANT",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "The Eidolon bristles with kinetic energy. Its armor looks like it can be stripped through repeated attacks, but doing so might be dangerous.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_shards_adamant",
+    "name": "Shards (ADAMANT)",
+    "origin": {
+       "type": "Template",
+      "name": "ADAMANT",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<li>New Shards: 2</li><p>At the end of the Eidolon's turn, all shards move up to their Speed toward the nearest hostile character but take no other action or movement.</p><p>Whenever the Eidolon loses Armor, each shard produces a Burst 1 explosion of debris around itself, dealing 2 Kinetic Damage to all objects and characters within the affected area.</p>",
+    "tags": []
+  },
+  {
+    "id": "eidolon_layer_changes_blurred",
+    "name": "BLURRED",
+    "origin": {
+      "type": "Template",
+      "name": "BLURRED",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<p>While this layer is active, the Eidolon is moving rapidly. This gives it Evasion 20, Speed 10, Resistance to all damage and Immunity to Grapple, and allows it to treat any critical hits on itself as normal hits.</p><p>If the Eidolon is Slowed or Immobilized, the Eidolon stops moving rapidly, ending these effects. This lasts until the end of the next character's turn.</p><p>The Eidolon can take a quick action at the end of each other character's turn. This is not a reaction. It can only use this special action to either Boost or use one of this layer's systems.</p>",
+    "tags": []
+  },
+  {
+    "id": "eidolon_dream_logic_chronology_blurred",
+    "name": "Dream-Logic Chronology",
+    "origin": {
+      "type": "Template",
+      "name": "BLURRED",
+      "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon automatically hits.",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      }
+    ],
+    "weapon_type": "Main Memetic",
+    "attack_bonus": [
+      0,
+      0,
+      0
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "damage": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "on_hit": "the target must succeed on an Agility save or become Slowed until the end of their next turn. Characters that are already Slowed or Stunned instead take {4/5/6} Energy Damage"
+  },
+  {
+    "id": "eidolon_infinite_blur_blurred",
+    "name": "Infinite Blur",
+    "origin": {
+       "type": "Template",
+      "name": "BLURRED",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "A character within line of sight and Range 5 takes 4 Energy AP. As a side effect, they become supercharged with chronal energy. On their next turn, they gain Immunity to Slowed and Stunned, their Speed increases to 10 if it is slower, they can Boost 1/turn as a free action, and they treat the layer as if it isn't moving rapidly. This last until the end of their turn, at which point they are Stunned until the end of their following turn.",
+    "tags": [{
+        "id": "tg_quick_action"
+      },
+      {
+        "id":"tg_ap"
+      }]
+  },
+  {
+    "id": "eidolon_hint_blurred",
+    "name": "HINT (BLURRED)",
+    "origin": {
+       "type": "Template",
+      "name": "BLURRED",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "The Eidolon will be easier to hit if it is Slowed or Immobilized (or if someone else is sped up).",
+    "tags": []
+  },
+  {
+    "id": "eidolon_shards_blurred",
+    "name": "Shards (BLURRED)",
+    "origin": {
+       "type": "Template",
+      "name": "BLURRED",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<li>New Shards: 3</li> At the start of the Eidolon's turn, its shards can move up to 2 spaces in any direction, but they can't take any other actions. If the Eidolon moves through a space occupied by one of its shards, that shard is destroyed in a Burst 2 explosion. Hostile characters within the affected area take 2 Energy and are Slowed until the start of their next turn.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_layer_changes_fundamental",
+    "name": "FUNDAMENTAL",
+    "origin": {
+      "type": "Template",
+      "name": "FUNDAMENTAL",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<p>While this layer is active, the Eidolon has Immunity to all damage and effects.</p><p>When this layer manifests, teleport all shards to nonadjacent free spaces within Range 5 of the Eidolon. The moment all shards are formed into one contiguous shape, the Eidolon is Stunned until the end of its next turn. Additionally, it permanently loses the Immunity granted by this layer.</p>",
+    "tags": []
+  },
+  {
+    "id": "eidolon_core_assumption_fundamental",
+    "name": "Core Assumption",
+    "origin": {
+      "type": "Template",
+      "name": "FUNDAMENTAL",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Up to three characters within line of sight and Range 10 must succeed on Hull saves or take {4/5/7} Physical and be knocked back 3 spaces.",
+    "tags": [
+      {
+        "id": "tg_quick_action"
+      }]
+  },
+  {
+    "id": "eidolon_reunite_fundamental",
+    "name": "Reunite",
+    "origin": {
+       "type": "Template",
+      "name": "FUNDAMENTAL",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "Two characters within line of sight and Range 15 are pushed as far as possible in a straight line toward each other. Colliding with a shard or obstacle causes them to stop, otherwise they slam into each other and must each succeed on a Hull save. On a failure, they take kinetic damage equal to the number of spaces between them when this action was taken (up to a maximum of {10/14/18} Physical ) and are knocked Prone. On a success, they take half damage and avoid being knocked Prone.",
+    "tags": [{
+        "id": "tg_quick_action"
+      }]
+  },
+  {
+    "id": "eidolon_hint_fundamental",
+    "name": "HINT (FUNDAMENTAL)",
+    "origin": {
+       "type": "Template",
+      "name": "FUNDAMENTAL",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "To have any chance of harming this layer, its shards must reunited by being pushed back together. It would be wise to stay close together.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_shards_fundamental",
+    "name": "Shards (FUNDAMENTAL)",
+    "origin": {
+       "type": "Template",
+      "name": "FUNDAMENTAL",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<li>New Shards: {4/5/6}</li><p>These shards cannot move or take actions on their own. They have Immunity to all damage and effects except those specified below.</p><p>The shards can be pushed up to 3 spaces in a straight line in any direction as a quick action. Hitting them with ranged or melee attacks also pushes them 1 space in a direction of the attackers choice. Knockback and Grapple can also be used to move them.</p><p>When this layer is destroyed, all shards on the battlefield melt into inert puddles of water</p>",
+    "tags": []
+  },
+  {
+    "id": "eidolon_layer_changes_marine",
+    "name": "MARINE",
+    "origin": {
+      "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<p>While this layer is active, the Eidolon is Size 3 and has E-Defense 5, Hull +6, and Resistance to all damage. Any melee weapon that successfully damages it has a 50% chance of becoming stuck, rendering it unusable. While adjacent to the Eidolon, the attacker can retrieve their weapon by winning a contested Hull check as a quick action. Embedded weapons fall to the ground and can be retrieved as a free action from any adjacent space upon the layer's destruction.</p><p>If the Eidolon overheats, it permanently loses Resistance to all damage and becomes Slowed.</p>",
+    "tags": [],
+    "bonus": {
+      "hull": 6
+    },
+    "override": {
+      "size": 3,
+      "edef": 5
+    }
+  },
+  {
+    "id": "eidolon_drag_under_marine",
+    "name": "Drag Under",
+    "origin": {
+      "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon deals 4 AP damage to any characters that it currently has Grappled and then Grapples another adjacent character. It can have any number of characters Grappled at one time and can move and take reactions normally while doing so, no matter how many characters it has Grappled.",
+    "tags": [
+      {
+        "id": "tg_quick_action"
+      },
+      {
+        "id": "tg_ap"
+      }]
+  },
+  {
+    "id": "eidolon_spit_out_marine",
+    "name": "Spit Out",
+    "origin": {
+       "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon violently ejects a Grappled character from its grasp, ending the Grapple and knocking them 5 spaces back. If the target collides with a shard, it explodes. The shard is destroyed and the target must succeed on a Hull save or take {8/10/12} Physical and become Immobilized until the end of their next turn. On a success, they take half damage and there are not other effects.",
+    "tags": [{
+        "id": "tg_quick_action"
+      }]
+  },
+  {
+    "id": "eidolon_swallow_marine",
+    "name": "Swallow",
+    "origin": {
+      "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      }
+    ],
+    "weapon_type": "Heavy Memetic",
+    "attack_bonus": [
+      1,
+      2,
+      3
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "damage": [
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "on_hit": "the target must succeed on an Agility save or be pulled 5 spaces directly toward the Eidolon, or as far as possible."
+  },
+  {
+    "id": "eidolon_hint_marine",
+    "name": "HINT (MARINE)",
+    "origin": {
+       "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "Superheating this layer will easily destroy it.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_shards_marine",
+    "name": "Shards (MARINE)",
+    "origin": {
+       "type": "Template",
+      "name": "MARINE",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<li>New Shards: 4</li><p>Shards can be placed within range 8 of the Eidolon. All shards cannot move or take any actions, and each produces a Burst 2 area of difficult terrain around itself in the form of a watery expanse of shifting gravity.</p>",
+    "tags": []
+  },
+  {
+    "id": "eidolon_layer_changes_enceladian",
+    "name": "ENCELADIAN",
+    "origin": {
+      "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "While this layer is active, the Eidolon has 2 Armor and Resistance to all damage from characters not in the Danger Zone.",
+    "tags": [],
+    "override": {
+      "armor": 2
+    }
+  },
+  {
+    "id": "eidolon_creeping_rime_enceladian",
+    "name": "Creeping Rime",
+    "origin": {
+      "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "<p>Characters take {2/3/4} Energy if they are not in the Danger Zone at the start of their turn. This damage cannot be prevented or reduced in any way. Characters that are Immobilized take double damage.</p><p>Characters within this aura with 0 Heat at the end of the round become Immobilized by a thick layer of frost. As a quick action, a character can break free (or break an adjacent character free) by succeeding on a Hull check, ending this effect.</p<",
+    "tags": []
+  },
+  {
+    "id": "eidolon_ice_spear_enceladian",
+    "name": "Ice Spear",
+    "origin": {
+      "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "This weapon deals double damage against Immobilized targets.",
+    "tags": [
+      {
+        "id": "eidolon_memetic_tag"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "weapon_type": "Heavy Memetic",
+    "attack_bonus": [
+      1,
+      2,
+      3
+    ],
+    "damage": [
+      {
+        "type": "kinetic",
+        "damage": [
+          3,
+          5,
+          6
+        ]
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "on_hit": ""
+  },
+  {
+    "id": "eidolon_bonechill_enceladian",
+    "name": "Bonechill",
+    "origin": {
+       "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": false,
+    "type": "Trait",
+    "effect": "The Eidolon batters a Blast 2 area within line of sight and Range 15 with ice. Hostile characters within the affected area must succeed on a Hull save or take 3 Physical and clear 4 heat. A swirling blizzard covers the affected area, making it difficult terrain and providing soft cover until this layer is destroyed. The Eidolon ignores this cover.",
+    "tags": [{
+        "id": "tg_quick_action"
+      }]
+  },
+  {
+    "id": "eidolon_hint_enceladian",
+    "name": "HINT (ENCELADIAN)",
+    "origin": {
+       "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "Staying hot will allow you to avoid the worst of this layer's effects.",
+    "tags": []
+  },
+  {
+    "id": "eidolon_shards_enceladian",
+    "name": "Shards (ENCELADIAN)",
+    "origin": {
+       "type": "Template",
+      "name": "ENCELADIAN",
+      "base": true
+    },
+    "locked": true,
+    "type": "Trait",
+    "effect": "<li>New Shards: 4</li><p>All shards cannot move and can only attack with Lesser Ice Spear</p>",
+    "tags": []
+  }
+]

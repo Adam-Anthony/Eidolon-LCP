@@ -1,0 +1,9 @@
+[
+  {
+    "id": "eidolon_memetic_tag",
+    "name": "MEMETIC",
+    "description": "These ranged weapons ignore engagement and do not affect allied characters, even if they are caught in their area of effect.",
+    "hidden": false,
+    "filter_ignore": true
+  }
+]

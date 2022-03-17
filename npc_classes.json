@@ -1,0 +1,190 @@
+[
+	{
+	"id": "eidolon_eidolon_layer",
+    "name": "EIDOLON LAYER",
+    "role": "controller",
+    "info": {
+      "flavor": "Flavor?",
+      "tactics": "hint?"
+    },
+    "stats": {
+      "armor": [
+        0,
+        0,
+        0
+      ],
+      "hp": [
+        10,
+        15,
+        20
+      ],
+      "evade": [
+        10,
+        12,
+        14
+      ],
+      "edef": [
+        10,
+        12,
+        14
+      ],
+      "heatcap": [
+        10,
+        10,
+        10
+      ],
+      "speed": [
+        5,
+        5,
+        5
+      ],
+      "sensor": [
+        20,
+        20,
+        20
+      ],
+      "save": [
+        12,
+        14,
+        16
+      ],
+      "hull": [
+        1,
+        2,
+        3
+      ],
+      "agility": [
+        1,
+        2,
+        3
+      ],
+      "systems": [
+        1,
+        2,
+        3
+      ],
+      "engineering": [
+        1,
+        2,
+        3
+      ],
+      "size": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "activations": [
+        1,
+        1,
+        1
+      ]
+    },
+    "base_features": [
+      "eidolon_layer_order_base",
+      "eidolon_metamorphosis_base",
+      "eidolon_predictable_base",
+      "eidolon_memetic_weapons_base",
+      "eidolon_bonus_activations_base",
+      "eidolon_ominous_hovering_base",
+      "eidolon_incomprehensible_base"
+    ],
+    "optional_features": [],
+    "power": 100
+	},
+  {
+  "id": "eidolon_shard_base",
+    "name": "SHARD",
+    "role": "controller",
+    "info": {
+      "flavor": "Flavor?",
+      "tactics": "hint?"
+    },
+    "stats": {
+      "armor": [
+        0,
+        0,
+        0
+      ],
+      "hp": [
+        5,
+        6,
+        8
+      ],
+      "evade": [
+        10,
+        12,
+        14
+      ],
+      "edef": [
+        10,
+        12,
+        14
+      ],
+      "heatcap": [
+        5,
+        5,
+        5
+      ],
+      "speed": [
+        5,
+        5,
+        5
+      ],
+      "sensor": [
+        20,
+        20,
+        20
+      ],
+      "save": [
+        12,
+        14,
+        16
+      ],
+      "hull": [
+        1,
+        2,
+        3
+      ],
+      "agility": [
+        1,
+        2,
+        3
+      ],
+      "systems": [
+        1,
+        2,
+        3
+      ],
+      "engineering": [
+        1,
+        2,
+        3
+      ],
+      "size": [
+        [
+          0.5
+        ],
+        [
+          0.5
+        ],
+        [
+          0.5
+        ]
+      ],
+      "activations": [
+        1,
+        1,
+        1
+      ]
+    },
+    "base_features": [],
+    "optional_features": [],
+    "power": 100
+  }
+]

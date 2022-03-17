@@ -1,0 +1,84 @@
+[
+  {
+    "id":"eidolon_core_layer",
+    "name": "CORE LAYER",
+    "description":"Beneath an Eidolon's layers is its core - its truest and most vulnerable form. The Eidolon's core has no shards. Any shards on the field when this layer is revealed are immediately vaporized, destroyed in the blink of an eye. Once the core is destroyed, the Eidolon is defeated.",
+    "base_features": [
+      "eidolon_pulsing_core_core",
+      "eidolon_anticausal_thought_core"
+    ],
+    "optional_features": [],
+    "power": 100
+  },
+  {
+    "id":"eidolon_adamant_layer",
+    "name": "ADAMANT",
+    "description":"An infinite metallic lattice; a rigid bulwark of oily darkness; a confusion of needles suspended in space; a loved one, furious.",
+    "base_features": [
+      "eidolon_layer_changes_adamant",
+      "eidolon_exhort_adamant",
+      "eidolon_metalic_shriek_adamant",
+      "eidolon_hint_adamant",
+      "eidolon_shards_adamant"
+    ],
+    "optional_features": [],
+    "power": 100
+  },
+  {
+    "id":"eidolon_blurred_layer",
+    "name": "BLURRED",
+    "description":"A coherent pocket of rapid movement; a shimmering blindness; a person, rapidly aging but never decaying.",
+    "base_features": [
+      "eidolon_layer_changes_blurred",
+      "eidolon_dream_logic_chronology_blurred",
+      "eidolon_infinite_blur_blurred",
+      "eidolon_hint_blurred",
+      "eidolon_shards_blurred"
+    ],
+    "optional_features": [],
+    "power": 100
+  },
+  {
+    "id":"eidolon_fundamental_layer",
+    "name": "FUNDAMENTAL",
+    "description":"A white, polished marble statue; a bruised and battered person dripping with corrosive oils; your father or mentor, terrified and weeping.",
+    "base_features": [
+      "eidolon_layer_changes_fundamental",
+      "eidolon_core_assumption_fundamental",
+      "eidolon_reunite_fundamental",
+      "eidolon_hint_fundamental",
+      "eidolon_shards_fundamental"
+    ],
+    "optional_features": [],
+    "power": 100
+  },
+  {
+    "id":"eidolon_marine_layer",
+    "name": "MARINE",
+    "description":"A deep depth lit from even deeper space; the white of an endless crashing wave; a water-bloated body, unidentifiable.",
+    "base_features": [
+      "eidolon_layer_changes_marine",
+      "eidolon_drag_under_marine",
+      "eidolon_spit_out_marine",
+      "eidolon_swallow_marine",
+      "eidolon_hint_fundamental",
+      "eidolon_shards_fundamental"
+    ],
+    "optional_features": [],
+    "power": 100
+  },
+  {
+    "id":"eidolon_enceladian_layer",
+    "name": "ENCELADIAN",
+    "description":"Pure white sea ice from which deep cracks sound; a gray haze through which blue light can be seen; a pane of steaming black glass, marbled with frost",
+    "base_features": [
+      "eidolon_creeping_rime_enceladian",
+      "eidolon_ice_spear_enceladian",
+      "eidolon_bonechill_enceladian",
+      "eidolon_hint_enceladian",
+      "eidolon_shards_enceladian"
+    ],
+    "optional_features": [],
+    "power": 100
+  }
+]
